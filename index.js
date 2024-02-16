@@ -1,5 +1,5 @@
 import React from "react";
-import { AppRegistry, Environment, View, StyleSheet, Text, VrButton } from "react-360";
+import { AppRegistry, Environment, View, StyleSheet, Text, VrButton, Model } from "react-360";
 
 
 import VideoModule from "VideoModule";
@@ -9,7 +9,7 @@ class avatour_360 extends React.Component {
     this.introVideo = VideoModule.createPlayer("introVideo");
     this.introVideo.play({
       source: {
-        url: "https://video.360cities.net/storyandmorecom/01669269_Pyramids-Aerial-360-VR-Stock-video-Footage-at-Egypt-Ancient-pharaonic-video-footage-ID2-3-1920x960.mp4",
+        url: "https://www.youtube.com/watch?v=aJ8lLdo6x_8",
       },
     });
 
@@ -19,11 +19,11 @@ class avatour_360 extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        {/* <iframe src="button.html" style={{ position: 'absolute', width: '100%', height: '100%', border: 'none' }} /> */}
+ 
+        {/* <iframe src="button.html" style={{ position: 'absolute', border: 'none' }} /> */}
         <View style={styles.ui}>
-          {/* <VrButton onClick={() => console.log('Button clicked!')} style={styles.button}>
-            <Text style={styles.buttonText}>Click me</Text>
-          </VrButton> */}
+
+          
         </View>
       </View>
     );
