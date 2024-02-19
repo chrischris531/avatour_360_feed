@@ -5,12 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
   <title>React 360 Overlay</title>
-  <script>var exports = {};</script>
-  <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
-  <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
   <style>
     #overlay {
         position: absolute;
@@ -23,7 +17,7 @@
       /* padding: 20px; */
       /* display: flex; */
       /* justify-content: center; */
-      /* align-items: center; */
+      /* align-items:Ÿ≈ center; */
     }
     .button {
       background-color: blue;
@@ -35,34 +29,18 @@
     }
   </style>
 </head>
-
 <body>
   <div id="overlay">
     <!-- <button class="button" onclick="handleButtonClick()">Click Me</button> -->
 
     <!-- <img src="static_assets/fun.gif" alt="Computer man" style="width: 100px; height: 100px;"> -->
-    <!-- <model-viewer 
-      src="static_assets/RobotExpressive.glb"
-      autoplay
-      animation-name="Yes"
-      animation-loop
-      animation-playback-controls>
-    </model-viewer> -->
-
-    <script type='text/babel' data-presets="react" data-type="module">
-      var JoystickComponent = React.createClass({
-        render: function () {
-            console.log("reeeeeeeeee");
-            return (
-              <div>
-                <Joystick size={100} baseColor="red" stickColor="blue"></Joystick>
-              </div>
-            );
-        } 
-    });
-      ReactDOM.render(<JoystickComponent />, document.getElementById('overlay'));
-    </script>
-    
+    <model-viewer 
+        src="static_assets/RobotExpressive.glb"
+        autoplay
+        animation-name="Yes"
+        animation-loop
+        animation-playback-controls>
+        </model-viewer>
   </div>
 
   <script>
