@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Style for the switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        /* Style for the switch input */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* Style for the switch slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        /* Style for the switch slider when it's on */
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        /* Style for the switch input when it's checked */
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        /* Style for the switch slider when it's on */
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Style for the switch round shape */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        /* Style for the switch round shape slider */
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        /* Centering the switch and the heading */
+        .center-container {
+            text-align: center; /* Center the contents */
+            color: white; /* Set the text color to white */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <!-- Switch element -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+
+        <h2>Standing || Walking</h2> <!-- Moved and will inherit color from .center-container -->
+    </div>
+</body>
+</html>
